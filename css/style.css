@@ -260,11 +260,20 @@ p{margin:0;line-height:1.7;color:var(--ink-soft)}
 .detail-block{margin-bottom:24px}
 .detail-block:last-child{margin-bottom:0}
 .detail-block h4{font-family:"Plus Jakarta Sans",sans-serif;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--pink-700);margin-bottom:12px}
-.detail-block ul{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}
-.detail-block li{font-size:14px;color:var(--ink-soft);position:relative;padding-left:18px}
-.detail-block li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--grad-warm)}
-.detail-block.timeline li{padding-left:0}
-.detail-block.timeline ul{grid-template-columns:1fr}
+.detail-block ul{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+.detail-block li{font-size:14px;color:var(--ink-soft);position:relative;padding-left:26px;line-height:1.5}
+.detail-block li::before{
+  font-family:"Font Awesome 6 Free";font-weight:900;content:"\f00c";
+  position:absolute;left:0;top:1px;width:17px;height:17px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:8.5px;color:#fff;border-radius:50%;
+  background:var(--grad-warm);box-shadow:0 3px 8px rgba(224,150,79,.35);
+}
+.detail-block.timeline ul{grid-template-columns:1fr;gap:12px}
+.detail-block.timeline li::before{
+  content:"";width:9px;height:9px;top:5px;left:5px;
+  background:var(--grad-brand);box-shadow:0 0 0 4px var(--surface-tint);
+}
 .detail-block p{font-size:14px}
 
 /* ---------- Gallery ---------- */
