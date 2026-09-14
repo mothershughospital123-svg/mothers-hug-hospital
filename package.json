@@ -1,0 +1,9 @@
+{
+  "name": "mothers-hug-hospital",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mother's Hug Hospital website — static site with a Vercel serverless contact form endpoint.",
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}
