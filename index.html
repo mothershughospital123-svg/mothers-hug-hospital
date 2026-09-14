@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mother's Hug Hospital — Caring for You and Your Loved Ones, Always</title>
@@ -25,7 +26,7 @@
     <a href="gallery.html">Gallery</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <div class="nav-cta">
+  <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i></button>  <div class="nav-cta">
     <a href="tel:+917989778445" class="btn btn-ghost btn-sm"><i class="fa-solid fa-phone"></i> Call Us</a>
     <a href="contact.html" class="btn btn-primary btn-sm">Book Appointment</a>
   </div>
@@ -216,7 +217,12 @@
           </div>
         </div>
         <p class="doctor-summary">Specializes in high-risk pregnancy, laparoscopic &amp; hysteroscopic surgery, and fertility management.</p>
-        <a href="doctors.html#dr-nikhila-bl" class="doctor-more"><span>View full profile</span></a>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+          <a href="doctors.html#dr-nikhila-bl" class="doctor-more"><span>View full profile</span></a>
+          <a href="https://www.instagram.com/drnikhila_bedregynecologist" target="_blank" rel="noopener" class="instagram-badge">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -254,6 +260,7 @@
         <div class="footer-social">
           <a href="tel:+917989778445" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
           <a href="mailto:contact@mothershughospital.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.instagram.com/drnikhila_bedregynecologist" target="_blank" rel="noopener" class="instagram-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
       <div class="footer-col">

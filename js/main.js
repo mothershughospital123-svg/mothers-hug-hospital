@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
+  /* ---------- Theme toggle (light / dark) ---------- */
+  document.querySelectorAll(".theme-toggle").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const root = document.documentElement;
+      const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const current = root.getAttribute("data-theme") || (systemDark ? "dark" : "light");
+      const next = current === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+  });
+
   /* ---------- Ambient background videos: play only while visible ---------- */
   const bgVideos = document.querySelectorAll(".js-bg-video");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
